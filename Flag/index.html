@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flag Task</title>
+    <style>
+      .flag {
+        object-fit: contain;
+        width: 100%;
+      }
+      .container {
+        max-width: 400px;
+        background-color: white;
+        margin: 0.8rem;
+      }
+      .container:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        box-shadow: 10px 10px 10px 0px lightgreen;
+      }
+      body {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .info {
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container">
+      <img
+        class="flag"
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png"
+        alt=""
+      />
+      <div class="info">
+        <h3>Germany</h3>
+        <p>Population: 9988979</p>
+        <p>Region: Europe</p>
+        <p>Cpaital: Berlin</p>
+      </div>
+    </div> -->
+
+    <script>
+      let array = [
+        [
+          {
+            img: "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png",
+            name: "Germany",
+            population: 9898900,
+            region: "Europe",
+            capital: "Berlin",
+          },
+        ],
+        [
+          {
+            img: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg",
+            name: "China",
+            population: 1411778724,
+            region: "Asia",
+            capital: "Beijing",
+          },
+        ],
+        [
+          {
+            img: "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg",
+            name: "Ukraine",
+            population: 41408239,
+            region: "Europe",
+            capital: "Kyiv",
+          },
+        ],
+        [
+          {
+            img: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg",
+            name: "Argentina",
+            population: 45605826,
+            region: "South America",
+            capital: "Buenos Aires",
+          },
+        ],
+        [
+          {
+            img: "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg",
+            name: "Australia",
+            population: 25845300,
+            region: "Australia",
+            capital: "Canberra",
+          },
+        ],
+      ];
+
+      function getCountry() {
+        for (let i in array) {
+          let container = document.createElement("div");
+          container.className = "container";
+          let flag = document.createElement("img");
+          flag.className = "flag";
+          let info = document.createElement("div");
+          info.className = "info";
+          container.append(flag, info);
+          document.body.append(container);
+          flag.setAttribute("src", `${array[i][0].img}`);
+          info.innerHTML = `<h3>${array[i][0].name}</h3>
+          <p>Population: ${array[i][0].population}</p>
+          <p>Region: ${array[i][0].region}</p>
+          <p>Cpaital: ${array[i][0].capital}</p>`;
+        }
+      }
+      getCountry();
+
+      // let container = document.createElement("div");
+      // container.className = "container";
+
+      // let flag = document.createElement("img");
+      // flag.setAttribute(
+      //   "src",
+      //   "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png"
+      // );
+      // flag.className = "flag";
+      // let info = document.createElement("div");
+      // info.className = "info";
+      // info.innerHTML = `<h3>Germany</h3>
+      //     <p>Population: 9909090</p>
+      //     <p>Region: Europe</p>
+      //     <p>Cpaital: Berlin</p>`;
+
+      // container.append(flag, info);
+      // document.body.append(container);
+    </script>
+  </body>
+</html>
