@@ -93,11 +93,11 @@
           info.className = "info";
           container.append(flag, info);
           document.body.append(container);
-          flag.setAttribute("src", `${array[i][0].img}`);
-          info.innerHTML = `<h3>${array[i][0].name}</h3>
-          <p>Population: ${array[i][0].population}</p>
-          <p>Region: ${array[i][0].region}</p>
-          <p>Cpaital: ${array[i][0].capital}</p>`;
+          flag.setAttribute("src", `${array[i].img}`);
+          info.innerHTML = `<h3>${array[i].name}</h3>
+          <p>Population: ${array[i].population}</p>
+          <p>Region: ${array[i].region}</p>
+          <p>Cpaital: ${array[i].capital}</p>`;
         }
       }
       getCountry();
