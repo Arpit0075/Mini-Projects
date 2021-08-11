@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batman</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading-container">
+        <h1>Batman Characters</h1>
+      </div>
+      <div class="img-container">
+        <img
+          onmouseout="startShow()"
+          onmouseover="stopShow()"
+          class="figure"
+          src="https://upload.wikimedia.org/wikipedia/en/e/e1/Bane_Batman_Vol_3_18.png"
+        />
+
+        <div class="btn-container">
+          <button onClick="slideImgLeft()" class="btn left-btn"><</button>
+          <button onClick="slideImgRight()" class="btn right-btn">></button>
+        </div>
+      </div>
+      <div class="p-container">
+        <p>
+          Batman is a superhero who appears in American comic books published by
+          DC Comics. Batman was created by artist Bob Kane and writer Bill
+          Finger, and debuted in the 27th issue of the comic book Detective
+          Comics on March 30, 1939. In the DC Universe continuity, Batman is the
+          alias of Bruce Wayne, a wealthy American playboy, philanthropist, and
+          industrialist who resides in Gotham City. Batman's origin story
+          features him swearing vengeance against criminals after witnessing the
+          murder of his parents Thomas and Martha; he trains himself physically
+          and intellectually, crafts a bat-inspired persona, and monitors the
+          Gotham streets at night. Kane, Finger, and other creators accompanied
+          Batman with supporting characters, including his sidekick Robin;
+          allies Alfred Pennyworth, James Gordon, and Catwoman; and foes such as
+          the Penguin, the Riddler, Two-Face and Joker.
+        </p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
