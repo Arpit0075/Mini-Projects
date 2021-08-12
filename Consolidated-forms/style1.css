@@ -1,0 +1,111 @@
+/* for form 1 and 2 */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.section-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+  height: 100vh;
+  padding: 1rem;
+}
+.form-1 {
+  background-color: blueviolet;
+  width: 50vw;
+}
+
+.input-1 {
+  width: 80%;
+}
+.label-1,
+.input-1 {
+  margin: 10px;
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+}
+.heading-1 {
+  padding: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+.btn-1 {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  width: 40%;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 20px;
+}
+.textarea-1 {
+  margin: 10px;
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.btn-2 {
+  display: block;
+  margin: 0.5rem;
+}
+.label-2 {
+  padding: 5px;
+  margin: 2px;
+}
+.para-2 {
+  padding: 0.5rem;
+}
+.section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+  height: 60vh;
+  padding: 1rem;
+}
+
+/* form third */
+.input-3,
+.label-3,
+.para-3 {
+  padding: 10px;
+  margin: 10px;
+  color: rgb(15, 2, 2);
+}
+
+.form-3 > input {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  padding: 5px;
+}
+.btn-3 {
+  border-radius: 10%;
+  padding: 10px;
+}
+
+.heading-3 {
+  color: rgb(15, 2, 2);
+  margin: 10px;
+  padding: 5px;
+}
+.form-3 {
+  width: 800px;
+  margin: auto;
+  background-color: rgb(92, 160, 160);
+  text-align: center;
+}
+
+/* for table */
+.section-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+  height: 50vh;
+  padding: 1rem;
+}
