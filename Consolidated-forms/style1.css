@@ -109,3 +109,63 @@
   height: 50vh;
   padding: 1rem;
 }
+
+/* for magazine */
+
+.section-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.main {
+  display: flex;
+  padding: 5px;
+  text-align: center;
+}
+.first {
+  margin-right: 50px;
+  width: 50%;
+}
+.second {
+  width: 45%;
+}
+.cont {
+  background-color: red;
+  color: white;
+}
+.first > input,
+.second > input {
+  width: 95%;
+}
+.input-5 {
+  padding: 3px;
+  margin: 2px;
+}
+.temp {
+  text-align: center;
+}
+.temp > input {
+  width: 95%;
+}
+
+.block {
+  display: block;
+  padding: 3px;
+  margin: 2px;
+}
+.main2 {
+  margin-top: 15px;
+}
+.bold {
+  font-weight: bold;
+}
+.form-5 {
+  border: 2px solid black;
+  margin: 10px;
+  padding: 5px;
+  height: 50vh;
+  width: 60vw;
+}
+
