@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <form action="">
+      <h1>Please fill in the details</h1>
+      <label for="">First Name</label>
+      <input class="input width simpleInput" type="text" required="required" />
+
+      <label " for="">Last Name</label>
+      <input class="input width simpleInput" type="text" />
+
+      <label  for="">Address</label>
+      <input class="input width simpleInput" type="text" />
+
+      <label  for="">Pin code</label>
+      <input class="input width simpleInput" type="number" />
+
+      <label  for="">Gender</label>
+      <input class="input width simpleInput" type="text" />
+
+      <div class="food">
+        <label for="food">Choice of food</label>
+
+        <input
+          onclick="paneerValue(event)"
+          class="input complexInput"
+          id="paneer"
+          type="radio"
+          value="paneer"
+        />
+        <label for="paneer">Paneer</label>
+
+        <input
+          onclick="eggValue(event)"
+          class="input complexInput"
+          id="egg"
+          type="radio"
+          value="egg"
+        />
+        <label for="egg">Egg</label>
+
+        <input
+          onclick="pulaoValue(event)"
+          class="input complexInput"
+          id="pulao"
+          type="radio"
+          value="pulao"
+        />
+        <label for="pulao">Pulao</label>
+
+        <input
+          class="input complexInput"
+          onclick="chickenBiryana(event)"
+          id="chicken-biryani"
+          type="radio"
+          value="chicken-biryani"
+        />
+        <label for="chicken-biryani">Chicken-biryani</label>
+
+        <input
+          onclick="pizzaValue(event)"
+          class="input complexInput"
+          id="pizza"
+          type="radio"
+          value="pizza"
+        />
+        <label for="pizza">Pizza</label>
+      </div>
+
+      <label for="">State</label>
+      <input class="input width simpleInput" type="text"
+      />
+
+      <label for="">Country</label>
+      <input class="input width simpleInput" type="text"
+      />
+
+      <button onclick="displayData(event)" class="btn">Submit</button>
+    </form>
+
+    <table border="1" cellspacing="2" cellpadding="2">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>Pin Code</th>
+        <th>Gender</th>
+        <th>Food choice</th>
+        <th>State</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td class="simpleTDS">"First Name"</td>
+        <td class="simpleTDS">"Last Name"</td>
+        <td class="simpleTDS">"Address"</td>
+        <td class="simpleTDS">"Pin code"</td>
+        <td class="simpleTDS">"Gender"</td>
+        <td class="complexTDS">"Food"</td>
+        <td class="simpleTDS">"State"</td>
+        <td class="simpleTDS">"Country"</td>
+      </tr>
+    </table>
+    <script src="./script.js"></script>
+  </body>
+</html>
