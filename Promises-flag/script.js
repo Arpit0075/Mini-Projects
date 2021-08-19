@@ -10,7 +10,7 @@ const europeanCountries = fetch(
   .catch((err) => console.log(err));
 
 Promise.all([asianCountries, europeanCountries]).then((countries) =>
-  console.log(countries)
+  console.log([...countries[0], ...countries[1]])
 );
 
 //countries who speaks spanish in europe
