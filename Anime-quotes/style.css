@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@300&display=swap");
+* {
+  margin: 0px;
+}
+body {
+  font-family: "Klee One", cursive;
+  color: whitesmoke;
+}
+.main-heading {
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.926);
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.926);
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.455);
+  max-width: 300px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 20%;
+}
+.container:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 5px 5px rgb(105, 104, 104);
+  transform: scale(1.2);
+}
+.heading {
+  padding: 0.2rem;
+}
+.para {
+  padding: 0.2rem;
+  font-weight: 600;
+}
+.character {
+  font-weight: 600;
+}
+.quote {
+  font-weight: 600;
+}
